@@ -25,7 +25,7 @@ def apply(dfg):
     dfg['timestamp'] = pd.to_datetime(dfg['timestamp'], cache=True, errors='coerce')
     return dfg
 
-# funktion: parse csv and append to db
+# function: parse csv and append to db
 def combine_csv(files):
     d6tstack.combine_csv.CombinerCSV(
             files,
